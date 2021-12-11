@@ -355,7 +355,7 @@
           "zh-CN": "页脚背景",
           "zh-TW": "頁尾背景"
         },
-        "default": "#242424"
+        "default": "#f0801c"
       },
       {
         "type": "color",

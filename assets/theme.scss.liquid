@@ -1144,7 +1144,8 @@ select::-ms-expand {
 
 .input-group--underline {
   @extend .input-group;
-  border-bottom: 2px solid $color-body-text;
+  border: 2px solid $color-body-text;
+  border-radius: 24px;
 
   input[type='text'],
   input[type='email'],
@@ -1152,7 +1153,9 @@ select::-ms-expand {
   input[type='password'],
   input[type='search'],
   input[type='number'] {
-    padding-left: $gutter / 2;
+    outline:none;
+    padding-left: 20px;
+    // padding-left: $gutter / 2;
     margin: 0;
     background-color: transparent;
     border: 0;
@@ -4019,7 +4022,8 @@ html {
 
 .site-footer {
   text-align: center;
-  background-color: $color-footer-bg;
+  // background-color: $color-footer-bg;
+  background-color: #f0801c;
   color: $color-footer-text;
   padding: ($gutter * 2) 0;
 
@@ -4168,6 +4172,10 @@ html {
   .input-group__btn {
     text-align: right;
     opacity: 1;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    
   }
 
   input[type="email"] {
@@ -4175,7 +4183,11 @@ html {
   }
 
   .btn--newsletter__submit {
-    color: $color-footer-text;
+    // color: $color-footer-text;
+    float:none;
+    color:#f0801c;
+    text-transform:none;
+    font-size:1.3rem;
   }
 
   @include media-query($small) {
